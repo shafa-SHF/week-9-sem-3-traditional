@@ -34,7 +34,7 @@ app.post('/submit-traditional', (req, res) => {
     // Write and execute the SQL INSERT statement
     const sql = `INSERT INTO users (name, email) VALUES (?, ?)`;
 
-    // The '?' placeholders prevent SQL injection (known as parameterized queries)
+    // The  placeholders prevent SQL injection (known as parameterized queries)
     db.run(sql, [name, email], function(err) {
         if (err) {
             // Handle errors
